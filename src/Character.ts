@@ -30,6 +30,10 @@ export default class Character implements Fighter {
     };
   }
 
+  get energy(): Energy {
+    return { type_: this._energy.type_, amount: this._energy.amount };
+  }
+
   get lifePoints(): number {
     return this._lifePoints;
   }
@@ -44,6 +48,10 @@ export default class Character implements Fighter {
 
   get defense(): number {
     return this._defense;
+  }
+
+  get dexterity(): number {
+    return this._dexterity;
   }
 
   receiveDamage(attackPoints: number): number {
@@ -77,8 +85,11 @@ export default class Character implements Fighter {
     this._strength += getRandomInt(1, 10);
     this._dexterity += getRandomInt(1, 10);
     this._defense += getRandomInt(1, 10);
-    this._energy = { ...this._energy, amount: 10 };
     this._lifePoints = this._maxLifePoints;
+    this._energy = {
+      ...this._energy,
+      amount: 10,
+    };
   }
 
   special() {
