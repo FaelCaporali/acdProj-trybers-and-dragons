@@ -14,7 +14,7 @@ export default abstract class Archetype {
     Archetype.instancesCounter = 0;
   }
 
-  static createdArchetypesInstances(): number {
+  static createdArchetypeInstances(): number {
     throw new Error('Not implemented');
   }
 
