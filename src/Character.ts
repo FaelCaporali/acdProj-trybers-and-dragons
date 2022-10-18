@@ -1,8 +1,9 @@
-import Fighter from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
+import sufferDamageHandler from './assets/damageHandler';
 
 export default class Character implements Fighter {
   readonly race: Race;
@@ -55,20 +56,16 @@ export default class Character implements Fighter {
   }
 
   receiveDamage(attackPoints: number): number {
-    const damage = attackPoints - this._defense;
-    const finalLP = this.lifePoints - damage;
-    if (damage > 0) {
-      if (finalLP - damage <= 0) {
-        this._lifePoints = -1;
-        return -1;
-      }
-      this._lifePoints = finalLP;
-      return finalLP;
-    }
-    return this._lifePoints;
+    const newLP = sufferDamageHandler(
+      attackPoints,
+      this._lifePoints,
+      this._defense,
+    );
+    this._lifePoints = newLP;
+    return newLP;
   }
 
-  attack(enemy: Fighter): void {
+  attack(enemy: SimpleFighter): void {
     enemy.receiveDamage(this._strength);
   }
 
