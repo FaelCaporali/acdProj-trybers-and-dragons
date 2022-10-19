@@ -6,8 +6,8 @@ import getRandomInt from './utils';
 import sufferDamageHandler from './assets/damageHandler';
 
 export default class Character implements Fighter {
-  readonly race: Race;
-  readonly archetype: Archetype;
+  protected readonly race: Race;
+  protected readonly archetype: Archetype;
   private _maxLifePoints: number;
   private _lifePoints: number;
   private _strength: number;
