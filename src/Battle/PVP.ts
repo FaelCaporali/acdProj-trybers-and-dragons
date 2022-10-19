@@ -1,6 +1,5 @@
 import Fighter from '../Fighter';
 import Battle from './Battle';
-import Character from '../Character';
 
 export default class PVP extends Battle {
   player1: Fighter;
@@ -66,7 +65,3 @@ export default class PVP extends Battle {
     return this.battle();
   }
 }
-
-const myPVP = new PVP(new Character('player1'), new Character('player2'));
-
-myPVP.fight();
