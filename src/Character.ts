@@ -18,8 +18,8 @@ export default class Character implements Fighter {
   constructor(name: string, race?: Race, archetype?: Archetype) {
     this._dexterity = getRandomInt(1, 10);
 
-    this.race = race || new Elf(name, this._dexterity);
-    this.archetype = archetype || new Mage(name);
+    this.race = race || new Elf();
+    this.archetype = archetype || new Mage();
 
     this._maxLifePoints = this.race.maxLifePoints / 2;
     this._lifePoints = this._maxLifePoints;

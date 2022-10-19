@@ -4,8 +4,8 @@ import Archetype from './Archetype';
 export default class Mage extends Archetype {
   _energyType: EnergyType;
 
-  constructor(name: string) {
-    super(name);
+  constructor() {
+    super('Mage');
     this._energyType = 'mana';
     Mage.instancesCounter += 1;
   }

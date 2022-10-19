@@ -1,9 +1,10 @@
+import getRandomInt from '../utils';
 import Race from './Race';
 
 export default class Orc extends Race {
   private _maxLifePoints: number;
-  constructor(name: string, dexterity: number) {
-    super(name, dexterity);
+  constructor() {
+    super('Orc', getRandomInt(2, 6));
     this._maxLifePoints = 74;
     Orc.raceCounter += 1;
   }

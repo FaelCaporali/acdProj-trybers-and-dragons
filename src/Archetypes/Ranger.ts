@@ -4,8 +4,8 @@ import Archetype from './Archetype';
 export default class Ranger extends Archetype {
   _energyType: EnergyType;
 
-  constructor(name: string) {
-    super(name);
+  constructor() {
+    super('Ranger');
     this._energyType = 'stamina';
     Ranger.instancesCounter += 1;
   }
