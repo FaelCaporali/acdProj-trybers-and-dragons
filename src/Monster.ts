@@ -1,4 +1,4 @@
-import sufferDamageHandler from './assets/damageHandler';
+import sufferDamageHandler from './battleSystem/damageHandler';
 import { SimpleFighter } from './Fighter';
 
 export default class Monster implements SimpleFighter {

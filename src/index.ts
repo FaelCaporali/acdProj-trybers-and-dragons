@@ -16,13 +16,13 @@ const monster2 = new Dragon();
 const pvp = new PVP(player2, player3);
 const pve = new PVE(player1, [monster1, monster2]);
 
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
+for (let i = 0; i <= 7; i += 1) player1.levelUp();
 
 function runBattles(battles: Battle[]): number[] {
   return battles.map((battle) => battle.fight());
 }
+
+runBattles([pvp, pve]);
 
 export {
   player1,

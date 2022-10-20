@@ -3,7 +3,8 @@ export default function sufferDamageHandler(
   lifePoints: number,
   defense?: number,
 ) {
-  const damage = attackPoints - (defense || 0);
+  let damage = attackPoints - (defense || 0);
+  damage = (damage <= 0 ? 1 : damage);
   const finalLP = lifePoints - damage;
   if (damage > 0) {
     if (finalLP - damage <= 0) {

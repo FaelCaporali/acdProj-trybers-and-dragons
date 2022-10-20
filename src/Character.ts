@@ -3,11 +3,12 @@ import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
-import sufferDamageHandler from './assets/damageHandler';
+import sufferDamageHandler from './battleSystem/damageHandler';
 
 export default class Character implements Fighter {
   readonly race: Race;
   readonly archetype: Archetype;
+  readonly name: string;
   private _maxLifePoints: number;
   private _lifePoints: number;
   private _strength: number;
@@ -16,10 +17,10 @@ export default class Character implements Fighter {
   private _energy: Energy;
 
   constructor(name: string, race?: Race, archetype?: Archetype) {
-    this._dexterity = getRandomInt(1, 10);
-
+    this.name = name;
     this.race = race || new Elf();
     this.archetype = archetype || new Mage();
+    this._dexterity = this.race.dexterity;
 
     this._maxLifePoints = this.race.maxLifePoints / 2;
     this._lifePoints = this._maxLifePoints;
@@ -89,7 +90,12 @@ export default class Character implements Fighter {
     };
   }
 
-  special() {
-    console.log('To be done to ', this.race.name, ' cast');
+  special(defender: SimpleFighter): void {
+    if (this._energy.amount >= 2) {
+      this._energy.amount -= 2;
+      defender.receiveDamage(this._strength * 2);
+    } else {
+      this._energy.amount += 2;
+    }
   }
 }
