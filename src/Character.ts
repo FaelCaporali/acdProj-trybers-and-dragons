@@ -3,7 +3,7 @@ import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
-import sufferDamageHandler from './battleSystem/damageHandler';
+import sufferDamageHandler from './helpers/damageHandler';
 
 export default class Character implements Fighter {
   readonly race: Race;

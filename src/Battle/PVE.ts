@@ -24,7 +24,7 @@ export default class PVE extends Battle {
     console.log(`
 --------------------------------------------------------------------------------
 
-    Battle Finished.....`);
+Battle Finished`);
 
     this._status = false;
     const monstersLP = this.monsters.map((msn) => msn.lifePoints);
@@ -35,7 +35,11 @@ export default class PVE extends Battle {
     }
 
     console.log(
-      `${super.fight() === 1 ? 'You Won Champ!' : 'Monsters got you man...'}`,
+      `${super.fight() === 1 
+        ? 'You Won Champ!' : 'Monsters got you man...'}
+        
+--------------------------------------------------------------------------------
+`,
     );
     return super.fight();
   }

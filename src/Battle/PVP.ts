@@ -1,5 +1,5 @@
 /* eslint-disable max-lines-per-function */
-import getFirstAttacker from '../battleSystem/helpers/getFirstAttacker';
+import getFirstAttacker from '../helpers/getFirstAttacker';
 import Fighter from '../Fighter';
 import Battle from './Battle';
 

@@ -17,8 +17,8 @@
     "parserOptions": {
         "ecmaVersion": 2019,
         "sourceType": "module",
-        // "project": "./tsconfig.json"
-        "project": "./03-backend/03-09-trybers-and-dragons/tsconfig.json"
+        "project": "./tsconfig.json"
+        // "project": "./03-backend/03-09-trybers-and-dragons/tsconfig.json"
     },
     "plugins": [
         "@typescript-eslint",
