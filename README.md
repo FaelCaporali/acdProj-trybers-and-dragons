@@ -43,6 +43,7 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 > ```
 >
 > e ✨✨✨ pronto!
+>
 > ❗**OBSERVAÇÃO** Para este projeto, o comando acima cria container, o executa e o serviço é parado. Para executar o script novamente, reinicie o container criado, ou desça a rede criada (docker compose down) e o crie novamente.
 
 2. Local:
