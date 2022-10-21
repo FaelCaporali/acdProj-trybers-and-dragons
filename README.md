@@ -57,7 +57,8 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 
 ## SCRIPTS
 
-- start: roda os scripts do projeto e imprime em seu console o resultado da simulação de batalha.
+- start: roda os scripts do projeto e imprime em seu console o resultado da simulação da batalha.
+- lint: Executa o ESLint no projeto.
 
 </details>
 
