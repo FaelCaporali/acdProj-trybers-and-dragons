@@ -34,7 +34,8 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 
 ## PARA RODAR O PROJETO
 
-> 1. Docker:
+1. Docker:
+
 > Com o docker e docker compose instalado (em versões mais atualizadas do docker o composer vem por default), execute:
 >
 > ```bash
@@ -42,8 +43,10 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 > ```
 >
 > e ✨✨✨ pronto!
+> ❗**OBSERVAÇÃO** Para este projeto, o comando acima cria container, o executa e o serviço é parado. Para executar o script novamente, reinicie o container criado, ou desça a rede criada (docker compose down) e o crie novamente.
 
-> 2. Local:
+2. Local:
+
 > Clone o repositório, entre na pasta raiz, instale as dependências e rode o projeto:
 >
 > ```bash
