@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Reveal JS presentation</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reveal.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- highlight Theme -->
+  
+  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+  
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/chalkboard/style.css">
+	
+	
+	
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/customcontrols/style.css">
+  
+	
+
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/theme/black.css" id="theme">
+  
+  
+
+  <link rel="stylesheet" href="libs/styles/tasklist.css">
+	<link rel="stylesheet" href="libs/styles/iota.css">
+	<link rel="stylesheet" href="libs/styles/layout.css">
+
+
+  <!-- Revealjs Theme -->
+  
+
+   <!-- css list -->
+	
+
+   
+
+</head>
+
+<body>
+
+   
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <h1>Boas vindas ao projeto Trybers and Dragons(T&amp;D)</h1>
+<hr>
+<p>⚔️🐉🐲⚔️</p>
+<p>Repositório acadêmico
+Web-Fullstack-Development -&gt; <a href="https://www.betrybe.com/">Trybe</a></p>
+<p>— ⚔️🐉🐲⚔️ —</p>
+<pre><code class="language-typescript">
+const keyWords: [Production[], Development[]] = 
+  [[NODE, DOCKER], [TYPESCRIPT, OOP, SOLID, ESLINT]];
+
+</code></pre>
+<details>
+<summary>
+<h2>TRYBERS AND DRAGONS</h2>
+</summary>
+<ul>
+<li>
+<p>🧝 Em Trybers &amp; Dragons, projeto desenvolvido no módulo <em><strong>backend</strong></em>, construímos um simples sistema de batalhas inspirado em RPGs e fantasias medievais que simulam um universo mágico! 🦄🐲</p>
+</li>
+<li>
+<p>💻⌨️:
+Para isso, aplicamos os conceitos de <em><strong>OOP</strong></em> construindo e implementando classes que constroem personagens e simulam batalhas.
+Também nos baseamos nos princípio <em><strong>SOLID</strong></em>, organizando propósitos específicos para representar nossas entidades de maneira concisa.
+A arquitetura dos diretórios e arquivos repete um padrão para auxiliar com que que cada classe aceite extensões de forma segura.
+Tudo isso utilizando <em><strong>TypeScript</strong></em>, auxiliando a aplicação da “sub-tipagem comportamental” com cada interface cumprindo um objetivo único. 🧑‍💻👊</p>
+</li>
+</ul>
+<h2>PARA RODAR O PROJETO</h2>
+<blockquote>
+<ol>
+<li>Docker:
+Com o docker e docker compose instalado (em versões mais atualizadas do docker o composer vem por default), execute:</li>
+</ol>
+<pre><code class="language-bash">docker compose up
+</code></pre>
+<p>e ✨✨✨ pronto!</p>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>Local:
+Clone o repositório, entre na pasta raiz, instale as dependências e rode o projeto:</li>
+</ol>
+<pre><code class="language-bash">
+git clone ${THIS.REPOSITORY} &amp;&amp; cd 
+
+</code></pre>
+</blockquote>
+</details>
+<details>
+  <summary><strong>ARQUITETURA</strong></summary>
+<pre><code class="language-tree">
+src
+├── Archetypes        -&gt; Classes que representam possíveis arquétipos implementados em personagens
+│   ├── index.ts      -&gt; Organizador de classes da entidade &quot;Arquétipos&quot;
+│   ├── Archetype.ts  -&gt; Uma classe abstrata contendo conceitos inatos comuns às classes da entidade
+│   └── *.ts          -&gt; Demais classes que representam arquétipos a serem implementadas em personagens
+|
+├── Battle            -&gt; Classes que implementadas, representam batalhas entre personagens
+│   ├── Battle.ts     -&gt; Classe abstrata
+│   ├── index.ts      -&gt; Organizador
+│   └── *.ts          -&gt; demais classes que recebem personagens para implementações
+|
+├── Fighter           -&gt; Interfaces de personagens
+|
+├── helpers           -&gt; Funções auxiliares globais
+|
+├── Races             -&gt; Classes que representam possíveis raças implementadas em personagens
+│   ├── index.ts      -&gt; Organizador
+│   ├── Race.ts       -&gt; Classe abstrata
+│   └── *.ts          -&gt; Demais classes que representam raças a serem implementadas em personagens
+|
+├── Character.ts      -&gt; Classe que constrói uma personagem
+├── Dragon.ts         -&gt; SubClasse de monstro
+├── Energy.ts         -&gt; Classe usada em construção de uma personagem
+├── index.ts          -&gt; script de implementações
+└── Monster.ts        -&gt; Classe que constrói uma personagem
+
+</code></pre>
+</details>
+<details>
+  <summary><strong>OUTROS PROJETOS ACADÊMICOS</strong></summary>
+<blockquote>
+<details>
+  <summary>FUNDAMENTOS</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8061805"><label class="task-list-item-label" for="task-item-8061805"> 1.01 - Lessons learned</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4927463"><label class="task-list-item-label" for="task-item-4927463"> 1.02 - Pixels art</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9006827"><label class="task-list-item-label" for="task-item-9006827"> 1.03 - Meme generator</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6482701"><label class="task-list-item-label" for="task-item-6482701"> 1.04 - Color guess</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2170136"><label class="task-list-item-label" for="task-item-2170136"> 1.05 - Mystery letter</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7230130"><label class="task-list-item-label" for="task-item-7230130"> 1.05 - TrybeWarts</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-732466"><label class="task-list-item-label" for="task-item-732466"> 1.06 - Testes unitários</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9883546"><label class="task-list-item-label" for="task-item-9883546"> 1.07 - Zoo Functions</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5647086"><label class="task-list-item-label" for="task-item-5647086"> 1.08 - Shopping cart</label></li>
+</ul>
+</details>
+</blockquote>
+<blockquote>
+<details>
+  <summary>FRONTEND</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9642960"><label class="task-list-item-label" for="task-item-9642960"> 2.01 - Solar system</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-607793"><label class="task-list-item-label" for="task-item-607793"> 2.02 - Tryunfo</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7239779"><label class="task-list-item-label" for="task-item-7239779"> 2.03 - Trybe tunes</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2542368"><label class="task-list-item-label" for="task-item-2542368"> 2.04 - FrontEnd online store</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-421855"><label class="task-list-item-label" for="task-item-421855"> 2.05 - React testing library</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4525728"><label class="task-list-item-label" for="task-item-4525728"> 2.06 - Trybe wallet</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1486196"><label class="task-list-item-label" for="task-item-1486196"> 2.07 - Trivia game</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9532212"><label class="task-list-item-label" for="task-item-9532212"> 2.08 - StarWars planets</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8523530"><label class="task-list-item-label" for="task-item-8523530"> 2.09 - Recipes App</label></li>
+</ul>
+</details>
+</blockquote>
+<blockquote>
+<details open>
+  <summary>BACKEND</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7397076"><label class="task-list-item-label" for="task-item-7397076"> 3.01 - Docker to-do list</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3670609"><label class="task-list-item-label" for="task-item-3670609"> 3.02 - MySQL - all for one</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6196932"><label class="task-list-item-label" for="task-item-6196932"> 3.03 - MySQL - one for all</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4166237"><label class="task-list-item-label" for="task-item-4166237"> 3.04 - Talker manager</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3824731"><label class="task-list-item-label" for="task-item-3824731"> 3.05 - Store manager</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5833239"><label class="task-list-item-label" for="task-item-5833239"> 3.06 - Stranger Things</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1358555"><label class="task-list-item-label" for="task-item-1358555"> 3.07 - Trybesmith</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4687289"><label class="task-list-item-label" for="task-item-4687289"> 3.08 - Trybers and Dragons ⚔️🐉**você está aqui!**🐲⚔️</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9629784"><label class="task-list-item-label" for="task-item-9629784"> 3.09 - Trybe futebol clube</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2243873"><label class="task-list-item-label" for="task-item-2243873"> 3.10 - E-commerce</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1371638"><label class="task-list-item-label" for="task-item-1371638"> 3.11 - Car shop</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3729304"><label class="task-list-item-label" for="task-item-3729304"> 3.12 - Delivery app</label></li>
+</ul>
+</details>
+</blockquote>
+<blockquote>
+<details>
+  <summary>CIÊNCIAS DA COMPUTAÇÃO</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6915491"><label class="task-list-item-label" for="task-item-6915491"> 4.01 - Job insights</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-136929"><label class="task-list-item-label" for="task-item-136929"> 4.02 - Relatório de estoque</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7928070"><label class="task-list-item-label" for="task-item-7928070"> 4.03 - Tech news</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8196724"><label class="task-list-item-label" for="task-item-8196724"> 4.04 - Algoritmos</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9636396"><label class="task-list-item-label" for="task-item-9636396"> 4.05 - TING - Trybe is not google</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8319715"><label class="task-list-item-label" for="task-item-8319715"> 4.06 - Restaurant orders</label></li>
+</ul>
+</details>
+</blockquote>
+</details>
+<p><a href="mailto:rafelhon@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Gmail"></a>  
+<a href="https://www.linkedin.com/in/faelcaporali/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="Linkedin"></a>  
+<a href="https://www.codewars.com/users/MudSailor"><img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&amp;logo=Codewars&amp;logoColor=white" alt="CodeWars"></a>  </p>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
+
+  <script src="libs/reveal.js/4.3.1/reveal.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/notes/notes.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/markdown/markdown.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/highlight/highlight.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/fullscreen/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/svg.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/Chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/d3.v3.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3.patch.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/queue.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/topojson.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/function-plot.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/customcontrols/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/embed-tweet/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/verticator/verticator.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/zoom/zoom.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/search/search.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/menu/menu.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chalkboard/plugin.js"></script>
+
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+  
+
+<script>
+  const printPlugins = [
+      RevealNotes,
+      RevealHighlight,
+      RevealMath.MathJax3,
+      RevealAnimate,
+      RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				Verticator 
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+      controlsTutorial: true,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: true,
+      slideNumber: false,
+      //#showSlideNumber "all" "print" "speaker"
+      hash: true, //# hash: false,
+      //# respondToHashChanges: true,
+      //# history: false,
+      keyboard: true,
+      //#keyboardCondition: null,
+      overview: true,
+      center: true,
+      touch: true,
+      loop: false,
+      rtl: false,
+      //#navigationMode: 'default', linear grid
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: false,
+      embedded: false,
+      help: true,
+      //#pause: true
+      showNotes: false,
+      autoPlayMedia: false, // TODO fix this to a nullable value
+      //#preloadIframes: null. true false
+      //#autoAnimate: true
+      //#autoAnimateMatcher: null,
+      //#autoAnimateEasing: 'ease',
+      //autoAnimateDuration: 1.0,
+      //#autoAnimateUnmatched: true
+      //#autoAnimateStyles: []
+      autoSlide: 0, // TODO fix this to a falseable value
+      autoSlideStoppable: true,
+      autoSlideMethod: '0',
+      defaultTiming: 120,
+      mouseWheel: true,
+      //#previewLinks: false
+      //#postMessage: true, // TODO : this can cause issues with the vscode api ???
+      //#postMessageEvents: false,
+      //#focusBodyOnPageVisibilityChange: true,
+      transition: 'slide',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      //#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      //#pdfSeparateFragments: true,
+      //#pdfPageHeightOffset: -1,
+      viewDistance: 3,
+      //#mobileViewDistance: 2,
+      display: 'block',
+      //#hideInactiveCursor: true,
+      //#hideCursorTime: 5000
+
+      // Parallax Background
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: '',
+      parallaxBackgroundHorizontal: 0,
+      parallaxBackgroundVertical: 0,
+
+      //Presentation Size
+      width: 960,
+			height: 20000,
+			margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2,
+      disableLayout: false,
+
+      audio: {
+        prefix: 'audio/', // audio files are stored in the "audio" folder
+        suffix: '.ogg', // audio files have the ".ogg" ending
+        textToSpeechURL: null, // the URL to the text to speech converter
+        defaultNotes: false, // use slide notes as default for the text to speech converter
+        defaultText: false, // use slide text as default for the text to speech converter
+        advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+        autoplay: false, // automatically start slideshow
+        defaultDuration: 5, // default duration in seconds if no audio is available
+        defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+        playerOpacity: 0.05, // opacity value of audio player if unfocused
+        playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+        startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+      },
+      
+      chalkboard: { // font-awesome.min.css must be available
+        //src: "chalkboard/chalkboard.json",
+        storage: "chalkboard-demo",
+      },
+      
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+      {
+        icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      {
+        icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+      
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+</script>
+
+</body>
+
+</html>
