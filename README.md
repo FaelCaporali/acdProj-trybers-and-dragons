@@ -8,20 +8,10 @@ Web-Fullstack-Development -> [Trybe](https://www.betrybe.com/)
 
 --- ⚔️🐉🐲⚔️ ---
 
-## Aqui você encontra
-
-1. Informações sobre o projeto
-2. Como rodar localmente.
-3. Outros projetos.
-
---- ⚔️🐉🐲⚔️ ---
-
-<details>
+<details open>
   <summary><strong>TRYBERS AND DRAGONS</strong></summary>
 
-- T&D foi um projeto realizado durante o módulo de **Backend** em 18/10/2022
-
-- 🧝🦄🐲 Em Trybers & Dragons, construímos um simples sistema de batalhas inspirado em RPGs e fantasias medievais que simulam um universo mágico!!!
+- 🧝🦄🐲 Em Trybers & Dragons, projeto desenvolvido no módulo ***backend***, construímos um simples sistema de batalhas inspirado em RPGs e fantasias medievais que simulam um universo mágico!!!
 
 - 💻 ⌨️🧑‍💻 :
 Para isso, aplicamos os conceitos de ***OOP*** construindo e implementando classes que constroem personagens e simulam batalhas.
@@ -34,6 +24,10 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 > const keyWords: BackendStacks[] = [NODE, TYPESCRIPT, OOP, SOLID, ESLINT, DOCKER];
 >
 > ```
+
+
+<details>
+  <summary><strong>ARQUITETURA</strong></summary>
 
 ```tree
 
@@ -67,5 +61,8 @@ src
 
 </details>
 
+</details>
+
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rafelhon@gmail.com) &nbsp;
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/faelcaporali/) &nbsp;
+[![CodeWars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=Codewars&logoColor=white)](https://www.codewars.com/users/MudSailor) &nbsp;
