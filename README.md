@@ -63,7 +63,12 @@ Tudo isso utilizando ***TypeScript***, auxiliando a aplicação da "sub-tipagem 
 </details>
 
 <details>
-  <summary><strong>ARQUITETURA</strong></summary>
+
+<summary>
+  
+## ARQUITETURA
+  
+</summary>
 
 ```tree
 
@@ -98,7 +103,12 @@ src
 </details>
 
 <details>
-  <summary><strong>OUTROS PROJETOS ACADÊMICOS</strong></summary>
+
+<summary>
+
+## OUTROS PROJETOS ACADÊMICOS
+
+</summary>
 
 > <details>
 >   <summary>FUNDAMENTOS</summary>
